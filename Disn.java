@@ -139,11 +139,6 @@ public class Disn extends JFrame{
             t2.setBounds(400,520,370,40);
             t2.setFont(new Font("Arial ", Font.BOLD,20 ));
 
-            ImageIcon img4 = new ImageIcon(getClass().getResource("submit.png"));
-            Image i4 = img4.getImage();
-
-            Image scaledImage4 = i4.getScaledInstance(60,55, Image.SCALE_AREA_AVERAGING);
-            i4 = new ImageIcon(scaledImage4).getImage();
 
             JButton b3 = new JButton();
             b3.setText("SUBMIT");
@@ -152,13 +147,13 @@ public class Disn extends JFrame{
             b3.setFocusable(false);
             //b3.setForeground(new Color(00,00,00));
            // b3.setBackground(new Color(160,160,160));
-            b3.setIcon(new ImageIcon(i4));
+
 
             JButton bb = new JButton();
             bb.setFont(new Font("Showcard Gothic", Font.BOLD, 25));
             bb.setBounds(100,590,200,55);
             bb.setText("BACK");
-            bb.setIcon(new ImageIcon(i4));
+
             bb.setFocusable(false);
 
             bb.addActionListener(new ActionListener() {
